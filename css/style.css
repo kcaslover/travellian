@@ -1,0 +1,270 @@
+
+
+/* ---------------global variables-------------- */
+
+:root {
+    --color-primary: #FF7757;
+    --color-primary-light: #FFD2C7;
+    --color-secondary-black: #331811;
+    --color-secondary-brown: #61291C;
+} 
+
+
+body {
+    font-family: "Rubik", sans-serif;
+    font-size: 20px;
+    color: #fff ;
+    font-weight: 400;
+}
+
+
+/* --------------------header -----------------*/
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: transparent;
+    padding: 25px 0;
+}
+
+.header__unordered-list {
+    display: flex;
+    gap: 32px;
+    list-style-type: none;
+    padding: 0;
+}
+
+.header__unordered-list a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.header__unordered-list li:first-child {
+    font-weight: 600;
+}
+
+.header__btns {
+    display: flex;
+    gap: 36px;
+}
+
+.btn {
+    background: transparent;
+    transition: all 0.2s ease;
+    color: #fff;
+    border: none;
+    font-size: 20px;
+    transition: all 0.2s ease;
+}
+
+.btn:hover {
+    transform: translateY(-2px);
+}
+
+
+.header__btn-signup {
+    background-color: var(--color-primary);
+    padding: 20px 32px;
+    border-radius: 12px;
+}
+
+
+
+.underline-effect {
+    position: relative;
+    display: inline-block;
+}
+
+.underline-effect::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -5px; 
+    width: 100%;
+    height: 2px;
+    background-color: var(--color-primary);
+    transition: width 0.3s ease; 
+}
+
+
+
+/* ---------------- hero -----------------*/ 
+
+
+
+
+.hero {
+    height: auto;
+    width: 100vw;
+    margin: 142px 0 0 0;
+    position: relative;
+}
+
+
+.container {
+    width: min(calc(100% - 64px), 1556px);
+    margin-inline: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+
+
+.hero-wrapper {
+    background-image: url(/images/Hallstatt-hero.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.hero-content {
+    display: flex;
+    flex-direction: column;
+    gap: 170px;
+}
+
+.hero-heading {
+    font-family: "PlayfairDisplay";
+    font-size: 84px;
+    margin: 0;
+}
+
+.hero-heading span {
+    display: block;
+    font-weight: 400;
+}
+
+.hero-text {
+    width: 100%;
+}
+
+.hero-text p { 
+    margin-bottom: 0;
+    font-size: 24px;
+}
+
+
+.hero-slider {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    position: absolute;
+    right: 4vw;
+    bottom: 50%;
+}
+
+.slider-dots {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.dot {
+    background-color: #fff;
+    height: 16px;
+    width: 16px;
+    display: inline-block;
+    border-radius: 50%;
+}
+
+
+
+.main-dot {
+    background-color: var(--color-primary);
+}
+
+
+.slider-arrows {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+
+.hero-form-wrapper {
+    position: relative;
+
+}
+
+
+
+
+.hero-form {
+    display: flex;
+    color: #172432;
+    gap: 40px;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    width: 1400px;
+    height: 200px;
+    position: relative;
+    left: -20%;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+
+
+@media (min-width: 1921px) {
+    .hero-form {
+        left: 0;
+    }
+}
+
+@media (max-width: 1440px) {
+    .hero-form {
+        width: 1200px;
+        left: -4%;
+    }
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    width: 225px;
+}
+
+
+.form-group label {
+    color: #767E86 ;
+    font-size: 16px;
+}
+
+.form-group > :nth-child(2) {
+    border: none;
+    border-bottom: 1px solid #000;
+    background: transparent;
+    font-family: "PlayfairDisplay", sans-serif;
+    font-size: 20px;
+    padding: 0px 0px 10px 0;
+}
+
+
+.book-btn {
+    background-color: var(--color-primary);
+    font-family: "PlayfairDisplay", sans-serif;
+    font-size: 36px;
+    position: absolute;
+    height: 100%;
+    border-top-right-radius: 10%;
+    border-bottom-right-radius: 10%;
+    right: -20px;
+    padding: 0 25px;
+    display: flex;
+    align-items: center;
+    gap: 18px;
+}
+
+.book-btn:hover {
+    background-color: #db654b;
+    transform: none;
+}
+
+.book-btn span {
+    display: block;
+}
+
