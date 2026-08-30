@@ -88,9 +88,7 @@ body {
 }
 
 
-
 /* ---------------- hero -----------------*/ 
-
 
 
 
@@ -105,58 +103,47 @@ body {
 .container {
     width: min(calc(100% - 64px), 1556px);
     margin-inline: auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
 }
 
 
 
-
-.hero-wrapper {
+.background {
     background-image: url(/images/Hallstatt-hero.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
 }
 
-.hero-content {
-    display: flex;
-    flex-direction: column;
-    gap: 170px;
-}
 
-.hero-heading {
+.hero__heading {
     font-family: "PlayfairDisplay";
     font-size: 84px;
     margin: 0;
 }
 
-.hero-heading span {
+.hero__heading span {
     display: block;
     font-weight: 400;
 }
 
-.hero-text {
+.hero__text {
     width: 100%;
 }
 
-.hero-text p { 
+.hero__text p { 
     margin-bottom: 0;
     font-size: 24px;
 }
 
 
-.hero-slider {
+.hero__slider {
     display: flex;
     flex-direction: column;
     gap: 24px;
     position: absolute;
-    right: 4vw;
-    bottom: 50%;
 }
 
-.slider-dots {
+.slider__dots {
     display: flex;
     flex-direction: column;
     gap: 24px;
@@ -177,7 +164,7 @@ body {
 }
 
 
-.slider-arrows {
+.slider__arrows {
     display: flex;
     flex-direction: column;
     gap: 16px;
@@ -191,8 +178,7 @@ body {
 
 
 
-
-.hero-form {
+.hero__form {
     display: flex;
     color: #172432;
     gap: 40px;
@@ -202,12 +188,11 @@ body {
     width: 1400px;
     height: 200px;
     position: relative;
-    left: -20%;
     border-top-left-radius: 15px;
     border-bottom-left-radius: 15px;
 }
 
-
+/* 
 @media (min-width: 1921px) {
     .hero-form {
         left: 0;
@@ -219,7 +204,7 @@ body {
         width: 1200px;
         left: -4%;
     }
-}
+} */
 
 .form-group {
     display: flex;
