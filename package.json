@@ -1,0 +1,22 @@
+{
+  "name": "travellian",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kcaslover/travellian.git"
+  },
+  "keywords": [],
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/kcaslover/travellian/issues"
+  },
+  "homepage": "https://github.com/kcaslover/travellian#readme",
+  "devDependencies": {
+    "playwright": "^1.62.1"
+  }
+}
