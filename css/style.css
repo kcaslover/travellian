@@ -104,7 +104,7 @@ body {
 }
 
 
-/* ---------------- hero -----------------*/ 
+/* ---------------- hero (РАЗОБРАТЬСЯ) -----------------*/ 
 
 .hero {
     min-height: calc(100vh - 138px);
@@ -114,7 +114,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    border: 1px solid rgb(51, 255, 0);
+    /* border: 1px solid rgb(51, 255, 0); */
 }
 
 
@@ -187,10 +187,10 @@ body {
     justify-content: center;
     align-items: center;
     gap: 40px;
-    /* position: relative; */
+    position: relative;
     color: #172432;
     background-color: #fff;
-    /* width: clamp(469px, 65%, 100%); */
+    width: clamp(469px, 65%, 100%);
     height: 200px;
     /* border-top-left-radius: 15px; */
     /* border-bottom-left-radius: 15px; */
@@ -239,11 +239,11 @@ body {
     background-color: var(--color-primary);
     font-family: "PlayfairDisplay", sans-serif;
     font-size: 36px;
-    /* position: absolute; */
-    /* height: 100%; */
+    position: absolute;
+    height: 100%;
     border-top-right-radius: 10%;
     border-bottom-right-radius: 10%;
-    /* right: -170px; */
+    right: -170px;
     padding: 0 25px;
     display: flex;
     align-items: center;
@@ -262,4 +262,146 @@ body {
 .booking {
     display: flex;
     width: 50%;
+}
+
+
+/* ------------------- destinations -------------*/ 
+
+.destinations {
+    height: 95vh;
+    /* margin: 140px 0; */
+
+}
+
+.destinations__info {
+    color: #000;
+    display: inline-block;
+}
+
+
+.title {
+    font-family: "PlayfairDisplay", sans-serif;
+    font-size: 64px;
+    font-weight: 400;
+    color: #172432;
+}
+
+
+.subtitle {
+    font-family: "Rubik",sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    color: #767E86;
+    /* display: inline-block; */
+}
+
+
+.destinations {
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+}
+
+
+.destinations__top {
+    display: flex;
+    align-items: last baseline;
+    gap: 234px;
+    justify-content: space-between;
+}
+
+.destinations__title {
+    white-space: nowrap;
+}
+
+.destinations__controls {
+    display: flex;
+    gap: 40px;
+}
+
+
+
+.destinations__btn--black {
+    background-color: #172432;
+    padding: 20px 28px;
+    border-radius: 12px;
+}
+
+
+.destinations__btn--orange {
+    background-color: var(--color-primary);
+    padding: 20px 28px;
+    border-radius: 12px;
+}
+
+
+
+.underline-effect--gap {
+    position: relative;
+    display: inline-block;
+}
+
+.underline-effect--gap::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -20px; 
+    width: 100%;
+    height: 2px;
+    background-color: var(--color-primary);
+    transition: width 0.3s ease; 
+}
+
+
+
+
+.destinations__cards {
+    display: flex;
+    gap: 32px;
+    overflow-x: auto;
+    /* scroll-behavior: smooth; */
+}
+
+.destinations__location {
+    position: relative;
+    flex: 0 0 280px;
+    /* scroll-snap-align: start; */
+}
+
+
+.destinations__text {
+    position: absolute;
+    bottom: 40px;
+    left: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.destinations__text h2 {
+    font-family: "PlayfairDisplay", sans-serif;
+    font-size: 28px;
+    font-weight: 400;
+    margin: 0;
+}
+
+
+.destinations__text p {
+    font-size: 24px;
+    font-weight: 400;
+    margin: 0;
+    font-weight: 400;
+}
+
+
+.location-wrapper {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+
+.location-wrapper img {
+    width: 16.88px;
+    height: 24px;
 }

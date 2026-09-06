@@ -63,34 +63,32 @@
           <img src="/images/arrow-orange.svg" alt="" />
         </div>
       </div>
-      <div class="booking">
-        <form class="hero__form">
-          <div class="form-group">
-            <label for="destination">DESTINATION</label>
-            <input type="text" id="destination" value="Dubai" />
-          </div>
-  
-          <div class="form-group">
-            <label for="person">PERSON</label>
-            <select id="person">
-              <option value="1">1</option>
-              <option value="2" selected>2</option>
-              <option value="3">3</option>
-              <option value="4">4+</option>
-            </select>
-          </div>
-  
-          <div class="form-group">
-            <label for="checkin">CHECK IN </label>
-            <input type="date" id="checkin" value="2020-09-17" />
-          </div>
-  
-          <div class="form-group">
-            <label for="checkout">CHECK OUT</label>
-            <input type="date" id="checkout" value="2020-10-17" />
-          </div>
-  
-        </form>
+      <form class="hero__form">
+        <div class="form-group">
+          <label for="destination">DESTINATION</label>
+          <input type="text" id="destination" value="Dubai" />
+        </div>
+
+        <div class="form-group">
+          <label for="person">PERSON</label>
+          <select id="person">
+            <option value="1">1</option>
+            <option value="2" selected>2</option>
+            <option value="3">3</option>
+            <option value="4">4+</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="checkin">CHECK IN </label>
+          <input type="date" id="checkin" value="2020-09-17" />
+        </div>
+
+        <div class="form-group">
+          <label for="checkout">CHECK OUT</label>
+          <input type="date" id="checkout" value="2020-10-17" />
+        </div>
+
         <button class="book-btn btn">
           <div class="span-wrapper">
             <span>Book</span>
@@ -98,13 +96,71 @@
           </div>
           <div class="arrow-wrapper"><img src="/images/directional-arrow.svg" alt="" class="dir-arrow"></div>
         </button>
-      </div>
+      </form>
     </section>
   </div>
   <main>
-    <section class="destinations">
-      <div class="container"></div>
-    </section>
+    <div class="container">
+      <section class="destinations">
+        <div class="destinations__top">
+          <div class="destinations__info">
+            <h2 class="destinations__title title underline-effect--gap">Popular Destinations</h2>
+            <p class="destinations__subtitle subtitle">Most popular destinations around the world, from historical
+              places to natural wonders.</p>
+          </div>
+          <div class="destinations__controls">
+            <button class="destinations__btn--black  btn">
+              <img src="/images/arrow-left-white.svg" alt="">
+            </button>
+            <button class="destinations__btn--orange btn">
+              <img src="/images/arrow-right.svg" alt="">
+            </button>
+          </div>
+        </div>
+        <div class="destinations__cards">
+          <div class="destinations__location">
+            <img src="/images/destinations/germany-berlin.png" alt="">
+            <div class="destinations__text">
+              <h2>Monument of Berlin</h2>
+              <div class="location-wrapper">
+                <img src="/images/location.svg" alt="">
+                <p>Berlin, Germany </p>
+              </div>
+            </div>
+          </div>
+          <div class="destinations__location">
+            <img src="/images/destinations/uk-london.png" alt="">
+            <div class="destinations__text">
+              <h2>Millennium Bridge</h2>
+              <div class="location-wrapper">
+                <img src="/images/location.svg" alt="">
+                <p>London, United Kingdom </p>
+              </div>
+            </div>
+          </div>
+          <div class="destinations__location">
+            <img src="/images/destinations/italy.png" alt="">
+            <div class="destinations__text">
+              <h2>Rialto Bridge</h2>
+              <div class="location-wrapper">
+                <img src="/images/location.svg" alt="">
+                <p>Venice, Italy </p>
+              </div>
+            </div>
+          </div>
+          <div class="destinations__location">
+            <img src="/images/destinations/portugal.png" alt="">
+            <div class="destinations__text">
+              <h2>Sea of Orange Tiles</h2>
+              <div class="location-wrapper">
+                <img src="/images/location.svg" alt="">
+                <p>Lisbon, Portugal</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
     <section class="special-offer">
       <div class="container"></div>
     </section>
