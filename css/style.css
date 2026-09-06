@@ -541,3 +541,53 @@ h2 {
     display: flex;
     gap: 32px;
 }
+
+
+
+/* ------------ blog ---------- */
+
+
+.blog {
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+}
+
+
+.blog__main {
+    display: flex;
+    gap: 32px;
+}
+
+.blog__info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 24px;
+}
+
+
+.blog__info-heading {
+    font-size: 54px;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+}
+
+
+.blog__desc {
+    color: #172432;
+    line-height: 52px;
+    font-size: 24px;
+}
+
+
+
+.blog__btn {
+    color: var(--color-primary);
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 0;
+}
