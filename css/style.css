@@ -732,3 +732,48 @@ h2 {
     opacity: 1;
     pointer-events: auto;
 }
+
+
+/* ------------- gallery -------------- */
+
+.gallery {
+    height: 75vh;
+    display: flex;
+    flex-direction: column;
+    gap: 137.5px;
+}
+
+.gallery__top {
+    display: flex;
+    align-items: last baseline;
+    justify-content: space-between;
+}
+
+.gallery__controls {
+    display: flex;
+    gap: 40px;
+}
+
+
+.gallery__content {
+    display: flex;
+    gap: 32px;
+}
+
+
+.gallery__content img {
+    max-width: 365px;
+    max-height: 570px;
+
+    width: 100%; 
+    min-width: 0;
+
+    object-fit: cover;
+    transition: all 0.4s ease;
+}
+
+
+.gallery__content img:hover {
+    transform: translateY(-37px);
+
+}
