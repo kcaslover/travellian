@@ -269,17 +269,94 @@
     </div>
     <div class="container">
       <section class="trip-planners">
-        
+        <div class="trip__info">
+          <h2 class="trip__title title underline-effect--gap">Trip Planners</h2>
+          <p class="trip__desc subtitle">20 years from now you will be more disappointed by the things that you didn’t
+            do. Stop regretting and start travelling, start throwing off the bowlines.</p>
+          <div class="btn__wrapper">
+            <button class="trip__btn btn ">View all trips plans</button>
+          </div>
+        </div>
+        <div class="trip__content">
+          <article class="trip__card">
+            <img src="images/trip-planners/rome-italy.png" alt="rome">
+            <div class="card__info">
+              <div class="info-top">
+                <span class="category">GUIDED TOUR</span>
+                <span class="price">€99/Day</span>
+              </div>
+              <h2 class="card__title title">Rome City Tour</h2>
+              <div class="info-bottom">
+                <img src="images/Rating.svg" alt="">
+                <span>7 Days tour</span>
+              </div>
+            </div>
+          </article>
+          <article class="trip__card active">
+            <img src="images/trip-planners/paris-france.png" alt="rome">
+            <div class="card__info">
+              <div class="info-top">
+                <span class="category">GUIDED TOUR</span>
+                <span class="price">€99/Day</span>
+              </div>
+              <h2 class="card__title title">Paris City Tour</h2>
+              <div class="info-bottom">
+                <img src="images/Rating.svg" alt="">
+                <span>7 Days tour</span>
+              </div>
+            </div>
+          </article>
+          <article class="trip__card">
+            <img src="images/trip-planners/budapest-hungary.png" alt="rome">
+            <div class="card__info">
+              <div class="info-top">
+                <span class="category">GUIDED TOUR</span>
+                <span class="price">€99/Day</span>
+              </div>
+              <h2 class="card__title title">Budapest City Tour</h2>
+              <div class="info-bottom">
+                <img src="images/Rating.svg" alt="">
+                <span>7 Days tour</span>
+              </div>
+            </div>
+          </article>
+          <article class="trip__card">
+            <img src="images/trip-planners/madrid-spain.png" alt="rome">
+            <div class="card__info">
+              <div class="info-top">
+                <span class="category">GUIDED TOUR</span>
+                <span class="price">€99/Day</span>
+              </div>
+              <h2 class="card__title title">Madrid City Tour</h2>
+              <div class="info-bottom">
+                <img src="images/Rating.svg" alt="">
+                <span>7 Days tour</span>
+              </div>
+            </div>
+          </article>
+        </div>
       </section>
     </div>
-    <section class="gallery">
-      <div class="container"></div>
-    </section>
+    <div class="container">
+      <section class="gallery">
+
+      </section>
+    </div>
     <section class="testimonial">
       <div class="container"></div>
     </section>
   </main>
   <footer></footer>
+  <script>
+    const cards = document.querySelectorAll('.trip__card');
+
+    cards.forEach(card => {
+      card.addEventListener('mouseenter', () => {
+        cards.forEach(c => c.classList.remove('active'));
+        card.classList.add('active');
+      });
+    });
+  </script>
 </body>
 
 </html>
