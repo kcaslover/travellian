@@ -777,3 +777,144 @@ h2 {
     transform: translateY(-37px);
 
 }
+
+
+
+/* -------- testimonial -------- */ 
+
+.testimonial {
+    height: 95vh;
+    display: flex;
+    flex-direction: column;
+    gap: 160px;
+    justify-content: center;
+}
+
+
+.testimonial-card {
+    background-color: #F5F6F7;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: start;
+    position: relative;
+    max-width: 663px;
+    padding: 60px 40px 40px 40px;
+}
+
+
+.testimonial__desc {
+    font-size: 18px;
+}
+
+
+.traveler-profile, .traveler-profile h3{
+    color: #767E86;
+    margin: 0;
+}
+
+.traveler-nickname {
+    font-size: 24px;
+}
+
+
+.traveler-role {
+    font-size: 18px;
+}
+
+
+.traveler-avatar {
+    position: absolute;
+    top: -70px;
+}
+
+
+.traveler-profile {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+
+.testimonial__cards {
+    display: flex;
+    gap: 32px;
+}
+
+
+
+.testimonial__controls {
+    display: flex;
+    justify-content: flex-end;
+    gap: 40px;
+}
+
+
+.testimonial__content {
+    display: flex;
+    flex-direction: column;
+    gap: 160px;
+}
+
+
+.newsletter__title {
+    color: #767E86;
+}
+
+.email__label {
+    color: #767E86;
+    font-size: 20px;
+}
+
+
+#email {
+    color: var(--color-primary);
+    background-color:#FFE8D4;
+    border: none;
+    padding: 24px 40px;
+    font-size: 20px;
+    border-radius: 12px;
+}
+
+
+.email-wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 16px;
+}
+
+
+
+.newsletter__btn {
+    background-color: var(--color-primary);
+    padding: 24px 40px;
+    border-radius: 12px;
+    font-size: 20px;
+}
+
+
+.newsletter__form {
+    display: flex;
+    align-items: end;
+    gap: 32px;
+}
+
+
+.newsletter-wrapper {
+    position: relative;
+}
+
+.newsletter {
+    display: inline-flex;
+    gap: 100px;
+    border-radius: 26px;
+    padding: 60px 80px;
+    position: absolute;
+    right: 50%;
+    transform: translateX(50%);
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.3);
+}
+
+
