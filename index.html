@@ -15,30 +15,30 @@
   <div class="background">
     <div class="container">
       <header class="header">
-        <div class="header__logo">
-          <a href="#">
-            <img src="/images/Logo.svg" alt="" />
-          </a>
+        <a href="#">
+          <img src="/images/Logo.svg" alt="" />
+        </a>
+        <nav class="header__nav">
+          <ul class="header__list">
+            <li><a href="#" class="underline-effect">Home</a></li>
+            <li><a href="#">Explore</a></li>
+            <li><a href="#">Travel</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Pricing</a></li>
+          </ul>
+        </nav>
+        <div class="header__controls">
+          <button class="btn--login btn">Login</button>
+          <button class="btn--signup btn">Sign up</button>
         </div>
-        <div class="header__nav-wrapper">
-          <nav class="header__nav">
-            <ul class="header__unordered-list">
-              <li><a href="#" class="underline-effect">Home</a></li>
-              <li><a href="#">Explore</a></li>
-              <li><a href="#">Travel</a></li>
-              <li><a href="#">Blog</a></li>
-              <li><a href="#">Pricing</a></li>
-            </ul>
-          </nav>
-        </div>
-        <div class="header__btns">
-          <button class="header__btn-login btn">Login</button>
-          <button class="header__btn-signup btn">Sign up</button>
-        </div>
+
+        <button class="header__burger btn">
+          ☰
+        </button>
       </header>
     </div>
 
-    <!-- ---------- hero ------------ -->
+    <!-- ===== hero ===== -->
 
     <section class="hero">
       <div class="container">
@@ -47,12 +47,12 @@
             <span>Start your unforgettable </span>
             <span>journey with us.</span>
           </h1>
-          <p>The best travel for your jouney begins now</p>
+          <p>The best travel for your journey begins now</p>
         </div>
       </div>
       <div class="hero__slider">
         <div class="slider__dots">
-          <div class="dot main-dot"></div>
+          <div class="dot dot--active"></div>
           <div class="dot"></div>
           <div class="dot"></div>
           <div class="dot"></div>
@@ -64,42 +64,44 @@
         </div>
       </div>
       <form class="hero__form">
-        <div class="form-group">
-          <label for="destination">DESTINATION</label>
-          <input type="text" id="destination" value="Dubai" />
+        <div class="form-groups">
+          <div class="form-group">
+            <label for="destination">DESTINATION</label>
+            <input type="text" id="destination" value="Dubai" />
+          </div>
+  
+          <div class="form-group">
+            <label for="person">PERSON</label>
+            <select id="person">
+              <option value="1">1</option>
+              <option value="2" selected>2</option>
+              <option value="3">3</option>
+              <option value="4">4+</option>
+            </select>
+          </div>
+  
+          <div class="form-group">
+            <label for="checkin">CHECK IN </label>
+            <input type="date" id="checkin" value="2020-09-17" />
+          </div>
+  
+          <div class="form-group">
+            <label for="checkout">CHECK OUT</label>
+            <input type="date" id="checkout" value="2020-10-17" />
+          </div>
         </div>
-
-        <div class="form-group">
-          <label for="person">PERSON</label>
-          <select id="person">
-            <option value="1">1</option>
-            <option value="2" selected>2</option>
-            <option value="3">3</option>
-            <option value="4">4+</option>
-          </select>
-        </div>
-
-        <div class="form-group">
-          <label for="checkin">CHECK IN </label>
-          <input type="date" id="checkin" value="2020-09-17" />
-        </div>
-
-        <div class="form-group">
-          <label for="checkout">CHECK OUT</label>
-          <input type="date" id="checkout" value="2020-10-17" />
-        </div>
-
-        <button class="book-btn btn">
+        <button class="btn--booking btn">
           <div class="span-wrapper">
             <span>Book</span>
             <span>Now</span>
           </div>
-          <div class="arrow-wrapper"><img src="/images/directional-arrow.svg" alt="" class="dir-arrow"></div>
+          <img src="/images/directional-arrow.svg" alt="">
         </button>
       </form>
     </section>
   </div>
   <main>
+    <!-- ============= destinations ============-->
     <div class="container">
       <section class="destinations">
         <div class="destinations__top">
@@ -108,51 +110,51 @@
             <p class="destinations__subtitle subtitle">Most popular destinations around the world, from historical
               places to natural wonders.</p>
           </div>
-          <div class="destinations__controls">
-            <button class=" slider-btn slider-btn--prev destinations__btn--black  btn" aria-label="Назад">
+          <div class="slider-controls">
+            <button class="slider-btn slider-btn--prev btn" aria-label="Previous">
               <img src="/images/arrow-left-white.svg" alt="">
             </button>
-            <button class="slider-btn slider-btn--next slider-btn--accent btn" aria-label="Вперед">
+            <button class="slider-btn slider-btn--next slider-btn--accent btn" aria-label="Next">
               <img src="/images/arrow-right.svg" alt="">
             </button>
           </div>
         </div>
         <div class="destinations__cards">
-          <div class="destinations__location">
+          <div class="destination-card">
             <img src="/images/destinations/germany-berlin.png" alt="">
-            <div class="destinations__text">
+            <div class="destination-card__text">
               <h2>Monument of Berlin</h2>
-              <div class="location-wrapper">
+              <div class="destination-card__location">
                 <img src="/images/location.svg" alt="">
                 <p>Berlin, Germany </p>
               </div>
             </div>
           </div>
-          <div class="destinations__location">
+          <div class="destination-card">
             <img src="/images/destinations/uk-london.png" alt="">
-            <div class="destinations__text">
+            <div class="destination-card__text">
               <h2>Millennium Bridge</h2>
-              <div class="location-wrapper">
+              <div class="destination-card__location">
                 <img src="/images/location.svg" alt="">
                 <p>London, United Kingdom </p>
               </div>
             </div>
           </div>
-          <div class="destinations__location">
+          <div class="destination-card">
             <img src="/images/destinations/italy.png" alt="">
-            <div class="destinations__text">
+            <div class="destination-card__text">
               <h2>Rialto Bridge</h2>
-              <div class="location-wrapper">
+              <div class="destination-card__location">
                 <img src="/images/location.svg" alt="">
                 <p>Venice, Italy </p>
               </div>
             </div>
           </div>
-          <div class="destinations__location">
+          <div class="destination-card">
             <img src="/images/destinations/portugal.png" alt="">
-            <div class="destinations__text">
+            <div class="destination-card__text">
               <h2>Sea of Orange Tiles</h2>
-              <div class="location-wrapper">
+              <div class="destination-card__location">
                 <img src="/images/location.svg" alt="">
                 <p>Lisbon, Portugal</p>
               </div>
@@ -161,86 +163,85 @@
         </div>
       </section>
     </div>
+    <!-- =============== offer ================-->
     <div class="container">
-      <section class="special-offer">
+      <section class="offer">
         <div class="offer__top">
           <div class="offer__info">
             <h2 class="offer__title title underline-effect--gap--right">Special Offer</h2>
-            <p class="destinations__subtitle subtitle">Check out our special offer and discounts</p>
+            <p class="offer__subtitle subtitle">Check out our special offer and discounts</p>
           </div>
-          <div class="offer__controls">
-            <button class=" slider-btn slider-btn--prev  btn" aria-label="Назад">
+          <div class="slider-controls">
+            <button class=" slider-btn slider-btn--prev  btn" aria-label="Previous">
               <img src="/images/arrow-left-white.svg" alt="">
             </button>
-            <button class="slider-btn slider-btn--next slider-btn--accent btn" aria-label="Вперед">
+            <button class="slider-btn slider-btn--next slider-btn--accent btn" aria-label="Next">
               <img src="/images/arrow-right.svg" alt="">
             </button>
           </div>
         </div>
         <div class="offer__cards">
-          <div class="offer__card">
+          <div class="offer-card">
             <img src="images/special-offer/lisbon-portugal.png" alt="">
-            <div class="offer__card-info">
-              <div class="offer__title-rating">
-                <h2 class="card__heading">Lisbon, Portugal</h2>
-                <img src="images/special-offer/Rating.svg" alt="" class="offer__rating">
+            <div class="offer-card__info">
+              <div class="offer-card__top">
+                <h2 class="offer-card__heading">Lisbon, Portugal</h2>
+                <img src="images/special-offer/Rating.svg" alt="">
               </div>
-              <div class="offer__card-desc">
-                <p>5 nights and 4 days in 5 star hotel, breakfast and lunch included. Very popular during the
-                  renaissance. Passage and going through the cites of the world in classical literature.</p>
-              </div>
-              <div class="offer__card-details">
-                <div class="offer__price">
+              <p class="offer-card__desc">5 nights and 4 days in 5 star hotel, breakfast and lunch included. Very
+                popular during the
+                renaissance. Passage and going through the cites of the world in classical literature.</p>
+              <div class="offer-card__details">
+                <div class="offer-card__price">
                   <span>From</span>
-                  <span class="offer__cost">€500</span>
+                  <span>€500</span>
                 </div>
-                <button class="offer__details-btn btn">DETAILS</button>
+                <button class="btn--details btn">DETAILS</button>
               </div>
             </div>
           </div>
-          <div class="offer__card">
+          <div class="offer-card">
             <img src="images/special-offer/athens-greece.png" alt="">
-            <div class="offer__card-info">
-              <div class="offer__title-rating">
-                <h2 class="card__heading">Athens, Greece </h2>
-                <img src="images/special-offer/Rating.svg" alt="" class="offer__rating">
+            <div class="offer-card__info">
+              <div class="offer-card__top">
+                <h2 class="offer-card__heading">Athens, Greece </h2>
+                <img src="images/special-offer/Rating.svg" alt="">
               </div>
-              <div class="offer__card-desc">
-                <p>5 nights and 4 days in 5 star hotel, breakfast and lunch included. Very popular during the
-                  renaissance. Passage and going through the cites of the world in classical literature.</p>
-              </div>
-              <div class="offer__card-details">
-                <div class="offer__price">
+              <p class="offer-card__desc">5 nights and 4 days in 5 star hotel, breakfast and lunch included. Very
+                popular during the
+                renaissance. Passage and going through the cites of the world in classical literature.</p>
+              <div class="offer-card__details">
+                <div class="offer-card__price">
                   <span>From</span>
-                  <span class="offer__cost">€800</span>
+                  <span>€800</span>
                 </div>
-                <button class="offer__details-btn btn">DETAILS</button>
+                <button class="btn--details btn">DETAILS</button>
               </div>
             </div>
           </div>
-          <div class="offer__card">
+          <div class="offer-card">
             <img src="images/special-offer/rome-italy.png" alt="">
-            <div class="offer__card-info">
-              <div class="offer__title-rating">
-                <h2 class="card__heading">Rome, Italy</h2>
-                <img src="images/special-offer/Rating.svg" alt="" class="offer__rating">
+            <div class="offer-card__info">
+              <div class="offer-card__top">
+                <h2 class="offer-card__heading">Rome, Italy</h2>
+                <img src="images/special-offer/Rating.svg" alt="">
               </div>
-              <div class="offer__card-desc">
-                <p>5 nights and 4 days in 5 star hotel, breakfast and lunch included. Very popular during the
-                  renaissance. Passage and going through the cites of the world in classical literature.</p>
-              </div>
-              <div class="offer__card-details">
-                <div class="offer__price">
+              <p class="offer-card__desc">5 nights and 4 days in 5 star hotel, breakfast and lunch included. Very
+                popular during the
+                renaissance. Passage and going through the cites of the world in classical literature.</p>
+              <div class="offer-card__details">
+                <div class="offer-card__price">
                   <span>From</span>
-                  <span class="offer__cost">€750</span>
+                  <span>€750</span>
                 </div>
-                <button class="offer__details-btn btn">DETAILS</button>
+                <button class="btn--details btn">DETAILS</button>
               </div>
             </div>
           </div>
         </div>
       </section>
     </div>
+    <!-- ============ blog =============== -->
     <div class="container">
       <section class="blog">
         <div class="blog__top">
@@ -248,12 +249,14 @@
           <p class="blog__subtitle subtitle">An insight the incredible experience in the world</p>
         </div>
         <div class="blog__main">
-          <img src="/images/blog/blog.png" alt="">
+          <div class="blog__image-wrapper">
+            <img src="/images/blog/blog.png" alt="">
+          </div>
           <div class="blog__info">
-            <h2 class="blog__info-heading title">
+            <h3 class="blog__heading">
               <span>Beatiful Italy</span>
               <span>Let's travel</span>
-            </h2>
+            </h3>
             <p class="blog__desc">But I must explain to you how all this mistaken idea of denouncing pleasure and
               praising pain was born and I will give you a complete account of the system and expound the actual
               teachings of the great explorer of the truth, the master- builder of human happiness. No one rejects,
@@ -267,68 +270,69 @@
         </div>
       </section>
     </div>
+    <!-- ================= trip ================ -->
     <div class="container">
-      <section class="trip-planners">
+      <section class="trip">
         <div class="trip__info">
           <h2 class="trip__title title underline-effect--gap">Trip Planners</h2>
           <p class="trip__desc subtitle">20 years from now you will be more disappointed by the things that you didn’t
             do. Stop regretting and start travelling, start throwing off the bowlines.</p>
-          <div class="btn__wrapper">
+          <div class="trip__btn-wrapper">
             <button class="trip__btn btn ">View all trips plans</button>
           </div>
         </div>
         <div class="trip__content">
-          <article class="trip__card">
+          <article class="trip-card">
             <img src="images/trip-planners/rome-italy.png" alt="rome">
-            <div class="card__info">
-              <div class="info-top">
-                <span class="category">GUIDED TOUR</span>
-                <span class="price">€99/Day</span>
+            <div class="trip-card__info">
+              <div class="trip-card__info-top">
+                <span>GUIDED TOUR</span>
+                <span>€99/Day</span>
               </div>
-              <h2 class="card__title title">Rome City Tour</h2>
-              <div class="info-bottom">
+              <h2 class="trip-card__title">Rome City Tour</h2>
+              <div class="trip-card__info-bottom">
                 <img src="images/Rating.svg" alt="">
                 <span>7 Days tour</span>
               </div>
             </div>
           </article>
-          <article class="trip__card active">
+          <article class="trip-card active">
             <img src="images/trip-planners/paris-france.png" alt="rome">
-            <div class="card__info">
-              <div class="info-top">
-                <span class="category">GUIDED TOUR</span>
-                <span class="price">€99/Day</span>
+            <div class="trip-card__info">
+              <div class="trip-card__info-top">
+                <span>GUIDED TOUR</span>
+                <span>€99/Day</span>
               </div>
-              <h2 class="card__title title">Paris City Tour</h2>
-              <div class="info-bottom">
+              <h2 class="trip-card__title">Paris City Tour</h2>
+              <div class="trip-card__info-bottom">
                 <img src="images/Rating.svg" alt="">
                 <span>7 Days tour</span>
               </div>
             </div>
           </article>
-          <article class="trip__card">
+          <article class="trip-card">
             <img src="images/trip-planners/budapest-hungary.png" alt="rome">
-            <div class="card__info">
-              <div class="info-top">
-                <span class="category">GUIDED TOUR</span>
-                <span class="price">€99/Day</span>
+            <div class="trip-card__info">
+              <div class="trip-card__info-top">
+                <span>GUIDED TOUR</span>
+                <span>€99/Day</span>
               </div>
-              <h2 class="card__title title">Budapest City Tour</h2>
-              <div class="info-bottom">
+              <h2 class="trip-card__title">Budapest City Tour</h2>
+              <div class="trip-card__info-bottom">
                 <img src="images/Rating.svg" alt="">
                 <span>7 Days tour</span>
               </div>
             </div>
           </article>
-          <article class="trip__card">
+          <article class="trip-card">
             <img src="images/trip-planners/madrid-spain.png" alt="rome">
-            <div class="card__info">
-              <div class="info-top">
-                <span class="category">GUIDED TOUR</span>
-                <span class="price">€99/Day</span>
+            <div class="trip-card__info">
+              <div class="trip-card__info-top">
+                <span>GUIDED TOUR</span>
+                <span>€99/Day</span>
               </div>
-              <h2 class="card__title title">Madrid City Tour</h2>
-              <div class="info-bottom">
+              <h2 class="trip-card__title">Madrid City Tour</h2>
+              <div class="trip-card__info-bottom">
                 <img src="images/Rating.svg" alt="">
                 <span>7 Days tour</span>
               </div>
@@ -337,6 +341,7 @@
         </div>
       </section>
     </div>
+    <!-- ==================== gallery ======================-->
     <div class="container">
       <section class="gallery">
         <div class="gallery__top">
@@ -344,82 +349,85 @@
             <h2 class="gallery__title title underline-effect--gap">Destination Gallery</h2>
             <p class="gallery__subtitle subtitle">Our photo gallery on trip</p>
           </div>
-          <div class="gallery__controls">
-            <button class=" slider-btn slider-btn--prev  btn" aria-label="Назад">
+          <div class="slider-controls">
+            <button class=" slider-btn slider-btn--prev  btn" aria-label="Previous">
               <img src="/images/arrow-left-white.svg" alt="">
             </button>
-            <button class="slider-btn slider-btn--next slider-btn--accent btn" aria-label="Вперед">
+            <button class="slider-btn slider-btn--next slider-btn--accent btn" aria-label="Next">
               <img src="/images/arrow-right.svg" alt="">
             </button>
           </div>
         </div>
         <div class="gallery__content">
-          <img src="images/gallery/man_with_wings--idk.png" alt="">
+          <img src="images/gallery/man_with_wings--idk.png" alt=""> <!-- class="gallery-item" запомнить-->
           <img src="images/gallery/partners_on_beach.png" alt="">
           <img src="images/gallery/girl_in_the_alley.png" alt="">
           <img src="images/gallery/man_on_the_railway.png" alt="">
         </div>
       </section>
     </div>
+    <!-- =========== testimonial ================== -->
     <div class="container">
       <section class="testimonial">
         <div class="testimonial__top">
           <h2 class="testimonial__title title underline-effect--gap">Traveler’s Experiences</h2>
           <p class="testimonial__subtitle subtitle">Here some awesome feedback from our travelers</p>
         </div>
-        <div class="testimonial__content">
-          <div class="testimonial__cards">
-            <div class="testimonial-card">
-              <img src="images/testimonial/john-doe__avatar.png" alt="" class="traveler-avatar">
-              <p class="testimonial__desc subtitle">But I must explain to you how all this mistaken idea of denouncing
-                pleasure and praising pain was born and I will give you a complete account of the system and expound the
-                actual teachings of the great explorer of the truth, the master- builder of human happiness.</p>
-              <img src="images/Rating.svg" alt="">
-              <div class="traveler-profile">
-                <h3 class="traveler-nickname title">John Doe</h3>
-                <h3 class="traveler-role subtitle">Accountant</h3>
-              </div>
-            </div>
-            <div class="testimonial-card">
-              <img src="images/testimonial/john-smith__avatar.png" alt="" class="traveler-avatar">
-              <p class="testimonial__desc subtitle">But I must explain to you how all this mistaken idea of denouncing
-                pleasure and praising pain was born and I will give you a complete account of the system and expound the
-                actual teachings of the great explorer of the truth, the master- builder of human happiness.</p>
-              <img src="images/Rating.svg" alt="">
-              <div class="traveler-profile">
-                <h3 class="traveler-nickname title">John Smith</h3>
-                <h3 class="traveler-role subtitle">Journalist, HWO News</h3>
-              </div>
-            </div>
-            <div class="testimonial-card">
-              <img src="images/testimonial/tamara-bellis__avatar.png" alt="" class="traveler-avatar">
-              <p class="testimonial__desc subtitle">But I must explain to you how all this mistaken idea of denouncing
-                pleasure and praising pain was born and I will give you a complete account of the system and expound the
-                actual teachings of the great explorer of the truth, the master- builder of human happiness.</p>
-              <img src="images/Rating.svg" alt="">
-              <div class="traveler-profile">
-                <h3 class="traveler-nickname title">Tamara Bellis</h3>
-                <h3 class="traveler-role subtitle">Managing Director, JTH</h3>
-              </div>
+        <div class="testimonial__cards">
+          <div class="testimonial-card">
+            <img src="images/testimonial/john-doe__avatar.png" alt="" class="testimonial-card__avatar">
+            <p class="testimonial-card__desc subtitle">But I must explain to you how all this mistaken idea of
+              denouncing
+              pleasure and praising pain was born and I will give you a complete account of the system and expound the
+              actual teachings of the great explorer of the truth, the master- builder of human happiness.</p>
+            <img src="images/Rating.svg" alt="">
+            <div class="testimonial-card__profile">
+              <h3 class="testimonial-card__nickname">John Doe</h3>
+              <h3 class="testimonial-card__role subtitle">Accountant</h3>
             </div>
           </div>
-          <div class="testimonial__controls">
-            <button class=" slider-btn slider-btn--prev  btn" aria-label="Назад">
-              <img src="/images/arrow-left-white.svg" alt="">
-            </button>
-            <button class="slider-btn slider-btn--next slider-btn--accent btn" aria-label="Вперед">
-              <img src="/images/arrow-right.svg" alt="">
-            </button>
+          <div class="testimonial-card">
+            <img src="images/testimonial/john-smith__avatar.png" alt="" class="testimonial-card__avatar">
+            <p class="testimonial-card__desc subtitle">But I must explain to you how all this mistaken idea of
+              denouncing
+              pleasure and praising pain was born and I will give you a complete account of the system and expound the
+              actual teachings of the great explorer of the truth, the master- builder of human happiness.</p>
+            <img src="images/Rating.svg" alt="">
+            <div class="testimonial-card__profile">
+              <h3 class="testimonial-card__nickname">John Smith</h3>
+              <h3 class="testimonial-card__role subtitle">Journalist, HWO News</h3>
+            </div>
           </div>
+          <div class="testimonial-card">
+            <img src="images/testimonial/tamara-bellis__avatar.png" alt="" class="testimonial-card__avatar">
+            <p class="testimonial-card__desc subtitle">But I must explain to you how all this mistaken idea of
+              denouncing
+              pleasure and praising pain was born and I will give you a complete account of the system and expound the
+              actual teachings of the great explorer of the truth, the master- builder of human happiness.</p>
+            <img src="images/Rating.svg" alt="">
+            <div class="testimonial-card__profile">
+              <h3 class="testimonial-card__nickname">Tamara Bellis</h3>
+              <h3 class="testimonial-card__role subtitle">Managing Director, JTH</h3>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial__controls slider-controls">
+          <button class=" slider-btn slider-btn--prev  btn" aria-label="Previous">
+            <img src="/images/arrow-left-white.svg" alt="">
+          </button>
+          <button class="slider-btn slider-btn--next slider-btn--accent btn" aria-label="Next">
+            <img src="/images/arrow-right.svg" alt="">
+          </button>
         </div>
       </section>
     </div>
+    <!-- ===================== newsletter ===================== -->
     <div class="newsletter-wrapper">
       <section class="newsletter">
         <h2 class="newsletter__title title">Our Newsletter</h2>
         <form action="#" class="newsletter__form">
-          <div class="email-wrap">
-            <label class="email__label" for="email">Email</label>
+          <div class="newsletter__email-wrap">
+            <label for="email">Email</label>
             <input id="email" type="email" placeholder="Enter your email">
           </div>
           <button type="submit" class="newsletter__btn btn">Subscribe</button>
@@ -427,17 +435,18 @@
       </section>
     </div>
   </main>
+  <!-- ============== footer =================== -->
   <footer class="footer">
     <div class="container">
       <div class="footer__content">
-        <div class="footer__logo">
+        <div class="footer__brand">
           <img src="images/Logo.svg" alt="">
           <p class="footer__copyright subtitle">Copyright © Travellian 2020 All rights reserved</p>
         </div>
         <nav class="footer__nav">
           <div class="footer__menu">
-            <h3 class="menu__title">Menu</h3>
-            <ul class="menu__list list">
+            <h3 class="footer__menu-title">Menu</h3>
+            <ul class="footer__menu-list list">
               <li><a href="/">Home</a></li>
               <li><a href="#">Explore</a></li>
               <li><a href="#">Travel</a></li>
@@ -446,8 +455,8 @@
             </ul>
           </div>
           <div class="footer__information">
-            <h3 class="information__title">Information</h3>
-            <ul class="information__list list">
+            <h3 class="footer__information-title">Information</h3>
+            <ul class="footer__information-list list">
               <li><a href="#">Destinations</a></li>
               <li><a href="#">Supports</a></li>
               <li><a href="#">Terms & Conditions</a></li>
@@ -455,17 +464,17 @@
             </ul>
           </div>
           <div class="footer__contact">
-            <h3 class="contact__title">Contact Info</h3>
-            <ul class="contact__list list">
+            <h3 class="footer__contact-title">Contact Info</h3>
+            <ul class="footer__contact-list list">
               <li><a href="#">+123 456 789</a></li>
               <li><a href="#">info@travellian.com</a></li>
-              <li><a href="#">1245, New York, USA</a></li>
+              <li><a href="#">1245, New York, </a></li>
             </ul>
           </div>
         </nav>
-        <div class="footer__soc-media">
-          <h3 class="footer__follow-us">Follow us on</h3>
-          <ul class="follow__list list">
+        <div class="footer__social-media">
+          <h3 class="footer__social-title">Follow us on</h3>
+          <ul class="footer__social-list list">
             <li><a href="#"><img src="images/facebook 1.svg" alt=""></a></li>
             <li><a href="#"><img src="images/pinterest 1.svg" alt=""></a></li>
             <li><a href="#"><img src="images/instagram 1.svg" alt=""></a></li>
@@ -476,7 +485,7 @@
     </div>
   </footer>
   <script>
-    const cards = document.querySelectorAll('.trip__card');
+    const cards = document.querySelectorAll('.trip-card');
 
     cards.forEach(card => {
       card.addEventListener('mouseenter', () => {
