@@ -19,7 +19,7 @@ body {
 
 
 .background {
-  background-image: url(/images/Hallstatt-hero.png);
+  background-image: url(./images/Hallstatt-hero.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
